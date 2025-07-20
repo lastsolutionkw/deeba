@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+.section {
+  background-color: #013220; /* Dark green */
+  color: #ffd700; /* Gold */
+  padding: 80px 20px;
+  font-family: "Orbitron", sans-serif; /* Modern digital font */
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffd700; /* Gold */
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.counter.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffd700;
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.label {
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+}

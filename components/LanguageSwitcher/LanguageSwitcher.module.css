@@ -1,0 +1,72 @@
+.languageSwitcher {
+  position: relative;
+  display: inline-block;
+}
+
+.switcherButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.switcherButton:hover {
+  color: #007bff;
+}
+
+.globeIcon {
+  font-size: 1.2rem;
+}
+
+.currentLang {
+  font-size: 1.2rem;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  min-width: 150px;
+  z-index: 1000;
+  margin-top: 8px;
+}
+
+.langOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.langOption:hover {
+  background-color: #f5f5f5;
+}
+
+.langOption.active {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+.flag {
+  font-size: 1.2rem;
+}
+
+.langName {
+  font-size: 0.9rem;
+} 

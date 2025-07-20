@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+.navbar {
+  background-color: #013220; /* Dark green */
+  color: #ffd700; /* Gold */
+  padding: 0 20px; /* Remove vertical padding to control height */
+  font-family: "Orbitron", sans-serif; /* Modern digital font */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 80px; /* Fixed height for the navbar */
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100%; /* Logo takes full height of the navbar */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoImage {
+  max-height: 60px; /* Adjust this value to fit the navbar */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.menuIcon {
+  display: none; /* Hidden on desktop */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffd700; /* Gold */
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #ffd700; /* Gold */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: #e6b800; /* Darker gold on hover */
+}
+
+/* Full-Screen Menu for Mobile */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .menu {
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #013220; /* Dark green */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .menu a {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+}
+
+.languageSwitcherContainer {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}

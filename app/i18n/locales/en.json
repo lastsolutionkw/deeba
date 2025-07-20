@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "gamechanger": "Changing the Game",
+    "numbers": "Numbers",
+    "join": "Join Now"
+  },
+  "hero": {
+    "title": "The First Real Estate Packed Cryptocurrency",
+    "subtitle": "Revolutionizing Real Estate Investment",
+    "cta": "Invest Now",
+    "dontWait": "Don't Wait",
+    "launchPrice": "Invest now and take advantage of launching price",
+    "earlyMover": "Early Mover Advantage",
+    "firstInvestors": "Be one of the first investors to join us",
+    "opportunity": "An Opportunity of",
+    "highGrowth": "High Growth Potential"
+  },
+  "about": {
+    "title": "About Medras Coin",
+    "description": "Medras Coin is a revolutionary cryptocurrency backed by real estate assets, providing investors with a unique opportunity to participate in the real estate market through blockchain technology."
+  },
+  "features": {
+    "title": "Our Features",
+    "feature1": {
+      "title": "Real Estate Backed",
+      "description": "Each coin is backed by tangible real estate assets"
+    },
+    "feature2": {
+      "title": "Secure Investment",
+      "description": "Blockchain technology ensures transparency and security"
+    },
+    "feature3": {
+      "title": "Global Access",
+      "description": "Invest in real estate from anywhere in the world"
+    }
+  },
+  "shuffleHero": {
+    "title": "Revolutionizing Real Estate Investment",
+    "subtitle": "Join the Future of Property Investment",
+    "description": "Experience a new way of investing in real estate through blockchain technology",
+    "cta": "Find Investing Opportunities Now"
+  },
+  "numbers": {
+    "title": "Our Impact in Numbers",
+    "totalValue": {
+      "value": "100M+",
+      "label": "Total Value Locked"
+    },
+    "activeInvestors": {
+      "value": "50K+",
+      "label": "Active Investors"
+    },
+    "propertiesBacked": {
+      "value": "100+",
+      "label": "Properties Backed"
+    }
+  },
+  "gameChanger": {
+    "title": "Changing the Game",
+    "subtitle": "Revolutionizing Real Estate Investment",
+    "description": "We're transforming how people invest in real estate through blockchain technology"
+  },
+  "parallax": {
+    "dontWait": "Don't Wait",
+    "launchPrice": "Invest now and take advantage of launching price",
+    "earlyMover": "Early Mover Advantage",
+    "firstInvestors": "Be one of the first investors to join us",
+    "opportunity": "An Opportunity of",
+    "highGrowth": "High Growth Potential",
+    "learnMore": "Learn more",
+    "content1": {
+      "title": "Spread Your Investments and Reduce Risk",
+      "paragraph1": "Diversify your portfolio with our platform and take control of your financial future.",
+      "paragraph2": "You should be diversifying your portfolio and reducing your risk. Don't put all your eggs in one basket - spread your investments across different asset classes."
+    },
+    "content2": {
+      "title": "Community Support",
+      "paragraph1": "Join a community of like-minded investors who are passionate about making a difference.",
+      "paragraph2": "Our support team is always available to answer your questions and provide guidance."
+    },
+    "content3": {
+      "title": "High Growth Potential",
+      "paragraph1": "Diversify your portfolio with our platform and take control of your financial future.",
+      "paragraph2": "Experience the benefits of real estate investment with the flexibility of cryptocurrency."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Medras Coin. All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact Us"
+    },
+    "social": {
+      "follow": "Follow Us"
+    }
+  }
+} 

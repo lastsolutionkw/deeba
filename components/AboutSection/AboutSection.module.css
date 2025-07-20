@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.aboutSection {
+  background-color: #013220; /* Dark green */
+  color: #ffd700; /* Gold */
+  padding: 100px 20px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif; /* Modern digital font */
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  background-color: rgba(255, 215, 0, 0.1); /* Semi-transparent gold background */
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #ffd700; /* Gold border */
+  text-align: center;
+}
+
+.column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffd700; /* Gold */
+}
+
+.column p {
+  font-size: 1rem;
+  color: #ffffff; /* White for better readability */
+  line-height: 1.6;
+}

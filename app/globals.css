@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .languageSwitcher {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .dropdown {
+  right: 0;
+  left: auto;
+}
+
+[dir="rtl"] .langOption {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .flag {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* RTL Layout Adjustments */
+[dir="rtl"] .heroSection .content {
+  text-align: right;
+}
+
+[dir="rtl"] .aboutSection {
+  text-align: right;
+}
+
+[dir="rtl"] .featuresSection .grid {
+  direction: rtl;
+}
+
+/* RTL Navigation */
+[dir="rtl"] .navbar {
+  direction: rtl;
+}
+
+[dir="rtl"] .navLinks {
+  flex-direction: row-reverse;
+}
+
+/* RTL Button and Icon Adjustments */
+[dir="rtl"] .ctaButton {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .icon {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
