@@ -62,7 +62,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className={styles.copyright}>
-          © {currentYear} Medras Coin. {t('copyright')}
+          © {currentYear} Diba Coin. {t('copyright')}
         </div>
       </div>
     </footer>

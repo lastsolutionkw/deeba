@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Medras Coin',
+  title: 'Diba Coin',
   description: 'The First Real Estate Packed Cryptocurrency',
 };
 

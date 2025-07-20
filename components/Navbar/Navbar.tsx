@@ -31,7 +31,7 @@ const Navbar = () => {
         >
           <img
             src="/logo.png"
-            alt="Medras Coin Logo"
+            alt="Diba Coin Logo"
             className={styles.logoImage}
           />
         </Link>

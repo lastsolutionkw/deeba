@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Medras Coin",
+  title: "Diba Coin",
   description: "The First Realstate Packed Cryptocurrency",
 };
 
