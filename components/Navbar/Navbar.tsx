@@ -30,7 +30,7 @@ const Navbar = () => {
           onClick={closeMenu}
         >
           <img
-            src="/logo.png"
+            src="/diba_logo.png"
             alt="Diba Coin Logo"
             className={styles.logoImage}
           />

@@ -22,7 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle }) => {
       <div className={styles.content}>
         {/* Logo */}
         <div className={styles.logoContainer}>
-          <img src="/logo.png" alt="Diba Coin Logo" className={styles.logo} />
+          <img src="/diba_logo.png" alt="Diba Coin Logo" className={styles.logo} />
         </div>
         {/* Title and Description */}
         <div className={styles.textContainer}>
