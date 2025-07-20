@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
 .heroSection {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center content horizontally */
+  justify-content: center;
   overflow: hidden;
-  font-family: 'Orbitron', sans-serif; /* Modern digital font */
+  background: linear-gradient(135deg, var(--deep-navy) 0%, var(--dark-gray) 100%);
   padding: 16px;
 }
 
@@ -19,30 +17,31 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(8px); /* Blur effect */
-  z-index: -1; /* Ensure video stays in the background */
+  filter: blur(8px);
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1; /* Ensure content is above the video */
-  color: #ffd700; /* Gold */
+  z-index: 1;
+  color: var(--text-primary);
   width: 100%;
-  max-width: 1200px; /* Increase max-width to accommodate logo */
-  padding: 24px 16px;
-  background-color: rgba(1, 50, 32, 0.85);
-  border-radius: 16px;
-  border: 2px solid #ffd700; /* Gold border for a futuristic look */
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  padding: 32px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(11, 20, 38, 0.8);
 }
 
 @media (min-width: 768px) {
   .content {
     flex-direction: row;
-    padding: 40px;
-    background-color: rgba(1, 50, 32, 0.7);
+    padding: 48px;
   }
 }
 
@@ -89,28 +88,28 @@
 }
 
 .title {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   margin-bottom: 16px;
   font-weight: 700;
-  text-transform: uppercase; /* Uppercase for a bold, digital look */
-  letter-spacing: 1.5px; /* Spacing for a futuristic feel */
-  line-height: 1.2; /* Adjust line height for two lines */
-  white-space: pre-line; /* Allow text to break into two lines */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  background: linear-gradient(135deg, var(--electric-blue) 0%, var(--pure-white) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @media (min-width: 768px) {
   .title {
     font-size: 3.5rem;
     margin-bottom: 24px;
-    letter-spacing: 2px;
   }
 }
 
 .description {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin-bottom: 24px;
-  color: #ffffff; /* White for better readability */
+  color: var(--text-secondary);
   line-height: 1.6;
   opacity: 0.9;
 }
@@ -123,38 +122,33 @@
 }
 
 .ctaButton {
-  background-color: #ffd700; /* Gold */
-  color: #013220; /* Dark green */
-  padding: 14px 28px;
+  background: linear-gradient(135deg, var(--electric-blue) 0%, var(--deep-navy) 100%);
+  color: var(--pure-white);
+  padding: 16px 32px;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: 'Orbitron', sans-serif; /* Consistent font for the button */
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  outline: none; /* Remove default outline */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  outline: none;
   width: 100%;
   max-width: 280px;
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
 }
 
 .ctaButton:hover {
-  background-color: #e6b800; /* Darker gold on hover */
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.4);
 }
 
 .ctaButton:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
 }
 
 @media (min-width: 768px) {
   .ctaButton {
-    padding: 16px 32px;
     font-size: 1.1rem;
     width: auto;
     max-width: none;

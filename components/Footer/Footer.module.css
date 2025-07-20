@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
-
 .footer {
-  background-color: #000000; /* Solid black background */
-  color: #ffd700; /* Gold text */
-  padding: 40px 20px;
-  font-family: "Orbitron", sans-serif; /* Modern digital font */
+  background: var(--charcoal);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  padding: 48px 20px;
   text-align: center;
 }
 
@@ -14,44 +12,62 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
 }
 
 .socialIcons {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .icon {
   font-size: 24px;
-  color: #ffd700; /* Gold icons */
-  transition: color 0.3s ease;
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon:hover {
-  color: #e6b800; /* Darker gold on hover */
+  color: var(--electric-blue);
+  transform: translateY(-2px);
 }
 
 .links {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .link {
-  color: #ffd700; /* Gold text */
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .link:hover {
-  color: #e6b800; /* Darker gold on hover */
+  color: var(--electric-blue);
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--electric-blue);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .copyright {
   font-size: 0.875rem;
-  color: #ffffff; /* White text for copyright */
-  margin-top: 20px;
+  color: var(--text-tertiary);
+  margin-top: 24px;
 }

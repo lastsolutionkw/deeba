@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
-
 .section {
-  background-color: #013220; /* Dark green */
-  color: #ffd700; /* Gold */
+  background: var(--bg-level-1);
+  color: var(--text-primary);
   padding: 80px 20px;
-  font-family: "Orbitron", sans-serif; /* Modern digital font */
   text-align: center;
 }
 
@@ -14,15 +11,20 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 40px;
-  padding: 40px 20px;
+  gap: 48px;
+  padding: 48px 24px;
 }
 
 .heading {
   font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #ffd700; /* Gold */
+  font-weight: 600;
+  margin-bottom: 48px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--electric-blue) 0%, var(--pure-white) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .counter {
@@ -32,6 +34,11 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 24px;
+  min-width: 200px;
 }
 
 .counter.animate {
@@ -42,18 +49,18 @@
 .number {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #ffd700;
-  font-family: "Orbitron", sans-serif;
-  margin-bottom: 10px;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  color: var(--emerald-green);
+  font-family: 'JetBrains Mono', Monaco, 'Courier New', monospace;
+  margin-bottom: 12px;
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
 }
 
 .label {
-  font-size: 1.25rem;
-  color: #ffffff;
-  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  color: var(--text-secondary);
   text-align: center;
   max-width: 200px;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {

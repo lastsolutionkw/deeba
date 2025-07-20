@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
 .aboutSection {
-  background-color: #013220; /* Dark green */
-  color: #ffd700; /* Gold */
+  background: var(--bg-level-1);
+  color: var(--text-primary);
   padding: 100px 20px;
   text-align: center;
-  font-family: 'Orbitron', sans-serif; /* Modern digital font */
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 60px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--electric-blue) 0%, var(--pure-white) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .columns {
@@ -26,24 +27,23 @@
 
 .column {
   flex: 1;
-  background-color: rgba(255, 215, 0, 0.1); /* Semi-transparent gold background */
-  padding: 30px;
-  border-radius: 10px;
-  border: 2px solid #ffd700; /* Gold border */
+  background: rgba(255, 255, 255, 0.03);
+  padding: 32px 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
 }
 
 .column h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #ffd700; /* Gold */
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--electric-blue);
 }
 
 .column p {
   font-size: 1rem;
-  color: #ffffff; /* White for better readability */
-  line-height: 1.6;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
